@@ -44,7 +44,7 @@ export class MyMath {
         if(value < 0) return this;
 
         let p = 1;
-        for(let i = 0; i < value; i++) p *= this.value;
+        for(; value--;) p *= this.value;
 
         this.value = p;
         return this;
