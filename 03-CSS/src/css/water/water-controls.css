@@ -1,21 +1,15 @@
 .controls > *,
 .skin-change > div {
-    background-color: blue;
+    background-color: var(--bright-green);
 
     font-size: 3vh;
     text-align: center;
 
-    background: linear-gradient(
-        0deg, 
-        black 0%,
-        var(--dark-brown) 10%,
-        var(--brown) 40%, 
-        var(--brown) 60%,
-        var(--dark-brown) 90%,
-        black 100%
-        );
+    background: radial-gradient(var(--bright-green),
+    var(--dark-green));
 
-    box-shadow: 0 0 .5vh 0 black;
+
+    box-shadow: 0 0 .5vh 0 white;
 }
 
 .controls > *{
@@ -34,31 +28,34 @@
 }
 
 .d-pad {
-    background: linear-gradient(
-        90deg, 
-        black 0%,
-        var(--dark-brown) 10%,
-        var(--brown) 40%, 
-        var(--brown) 60%,
-        var(--dark-brown) 90%,
-        black 100%
-        );
+    background: radial-gradient(var(--sunny-blue),
+    var(--deep-blue));
 
-    border-radius: 2vh;
-    border-bottom-left-radius: 100% 75%;
-    border-top-right-radius: 100% 75%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 20% ;
+
+    box-shadow: 0 0 1vh rgb(253, 33, 33);
 
 }
 
 .reset {
     right: 2vh;
-    top: 2.5vh;
+    top: 2vh;
 
     transform: rotate(10deg);
 
     border-radius: 1vh;
 
-    font-size: 2.5vh;
+    font-size: 2vh;
+
+    background: radial-gradient(var(--bright-green) 80%,
+    var(--dark-green));
+}
+
+.skin-change {
+    left: 4vh;
 }
 
 .skin-change > div {

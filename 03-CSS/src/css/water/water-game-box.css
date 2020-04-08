@@ -1,0 +1,67 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text-color);
+    text-shadow: 0 0 1vh var(--text-color);
+    background: linear-gradient(0deg,
+    var(--deep-blue),
+    var(--sunny-blue));
+}
+
+.screen,
+.gameBox {
+    border-top-left-radius: 3vh;
+    border-top-right-radius: 3vh;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+}
+
+.gameBox {
+    position: relative;
+    overflow: hidden;
+    margin: .75em auto 0;
+
+    background: linear-gradient(
+        -45deg, 
+        rgb(180, 2, 2) 5%, 
+        rgb(236, 71, 20) 30%, 
+        rgb(206, 150, 30) 70%,
+        rgb(235, 235, 115)
+    );
+
+    box-shadow: 0 1vw 10vh 0 black;
+    
+}
+
+.logo {
+    text-shadow: 1px 1px 3px white;
+    font-size: 5vh;
+}
+
+.menu {
+    border: .4vh solid var(--deep-blue);
+    box-shadow: 0 0 1vh 0 var(--sunny-blue),
+        0 0 1vh 0 var(--sunny-blue) inset;
+
+    border-radius: 2vh;
+}
+
+.menu > ul {
+    padding-inline-start: 0;
+
+    font-family: monospace;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2vh;
+    font-weight: 900;
+    color: var(--sunny-blue);
+    text-shadow: 0 0 1vh var(--deep-blue);
+
+    border: .4vh solid transparent;
+}
+
+.menu > ul.active {
+    border: .4vh solid var(--sunny-blue);
+    box-shadow: 0 0 1vh 0 var(--deep-blue),
+        0 0 1vh 0 var(--deep-blue) inset;
+    border-radius: 0.5vh;
+}
