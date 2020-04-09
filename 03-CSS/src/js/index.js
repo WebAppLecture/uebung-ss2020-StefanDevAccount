@@ -10,3 +10,4 @@ document.querySelector(".previous").addEventListener("click", () => skinChanger.
 
 skinChanger.activeSkin = "water";
 
+
